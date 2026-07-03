@@ -27,7 +27,7 @@ from bs4 import BeautifulSoup
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, ContextTypes, filters
 
-TOKEN = "8955372036:AAGKCpG8ObUi6rVrF2PqwyWZAacQSso4-eQ"
+TOKEN = os.getenv("TELEGRAM_TOKEN", "")
 MAX_OMGH = 5
 MAX_SAFHEH = 500
 MAX_FAYL = 5000
